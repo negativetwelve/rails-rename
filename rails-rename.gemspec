@@ -1,4 +1,6 @@
 # -*- encoding: utf-8 -*-
+require File.join(File.dirname(__FILE__), "lib", "rename", "version")
+
 Gem::Specification.new do |gem|
   gem.name          = 'rails-rename'
   gem.version       = RailsRename::VERSION
