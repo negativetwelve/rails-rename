@@ -3,7 +3,7 @@ require File.expand_path('../lib/rename/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name          = 'rails-rename'
-  gem.version       = Rename::VERSION
+  gem.version       = RailsRename::VERSION
   gem.license       = 'MIT'
   gem.authors       = ['Mark Miyashita']
   gem.email         = %w(negativetwelve@gmail.com)
