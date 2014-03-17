@@ -1,9 +1,7 @@
 # -*- encoding: utf-8 -*-
-require File.join(File.expand_path(File.dirname(__FILE__)), 'lib/rename/version')
-
 Gem::Specification.new do |gem|
   gem.name          = 'rails-rename'
-  gem.version       = RailsRename::VERSION
+  gem.version       = '1.0.0'
   gem.license       = 'MIT'
   gem.authors       = ['Mark Miyashita']
   gem.email         = %w(negativetwelve@gmail.com)
