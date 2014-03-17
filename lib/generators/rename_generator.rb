@@ -4,7 +4,7 @@ class RenameGenerator < Rails::Generators::Base
 
   def rename
     old_name = "#{Rails.application.class.parent}"
-    new_name_capitalized = new_name.downcase.gsub(/\s/, "_").camelize.capitalize
+    new_name_capitalized = new_name.gsub(/\s/, "_").camelize
 
     puts "Renaming app from #{old_name} to #{new_name_capitalized}"
 
