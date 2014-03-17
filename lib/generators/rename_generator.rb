@@ -36,8 +36,8 @@ class RenameGenerator < Rails::Generators::Base
         "run #{new_name_capitalized}::Application"
       end
 
-      gsub_file 'config/initializers/secret_token.rb', /(#{Regexp.escape(old_name)})(::Application.config.secret_token)/mi do |match|
-        "#{new_name_capitalized}::Application.config.secret_token"
+      gsub_file 'config/initializers/secret_token.rb', /(#{Regexp.escape(old_name)})(::Application.config.secret_key_base)/mi do |match|
+        "#{new_name_capitalized}::Application.config.secret_key_base"
       end
 
       gsub_file 'config/initializers/session_store.rb', /(#{Regexp.escape(old_name)})(::Application.config.session_store)/mi do |match|
