@@ -10,6 +10,8 @@ Gem::Specification.new do |gem|
   gem.summary       = 'A library to rename your Rails 4 application.'
 
   gem.add_dependency 'rails','>= 4.0.0'
+  gem.add_development_dependency "rake"
+
   gem.rubyforge_project = 'rails-rename'
 
   gem.files         = `git ls-files`.split("\n")
