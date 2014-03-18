@@ -14,4 +14,8 @@ Then, run `bundle install` to install the gem.
 
     rails g rename NewAppName
 
-where NewAppName is the new name for your application in camelcase.
+where `NewAppName` is the new name for your application in camelcase.
+
+## License
+
+[MIT License](https://github.com/negativetwelve/rails-rename/blob/master/LICENSE.txt)
