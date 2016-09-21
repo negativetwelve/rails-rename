@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
   gem.name          = 'rails-rename'
-  gem.version       = '1.0.0'
+  gem.version       = '2.0.0'
   gem.license       = 'MIT'
   gem.authors       = ['Mark Miyashita']
   gem.email         = %w(negativetwelve@gmail.com)
   gem.homepage      = 'https://github.com/negativetwelve/rails-rename'
-  gem.description   = 'This library allows you to rename Rails 4 application using a single command.'
-  gem.summary       = 'A library to rename your Rails 4 application.'
+  gem.description   = 'This library allows you to rename Rails 5 application using a single command.'
+  gem.summary       = 'A library to rename your Rails 5 application.'
 
-  gem.add_dependency 'rails','>= 4.0.0'
-  gem.add_development_dependency "rake"
+  gem.add_runtime_dependency 'rails', '~> 5.0', '>= 5.0.0'
+  gem.add_development_dependency "rake", '~> 0'
 
   gem.rubyforge_project = 'rails-rename'
 
