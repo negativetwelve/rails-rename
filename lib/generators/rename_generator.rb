@@ -51,6 +51,10 @@ class RenameGenerator < Rails::Generators::Base
       gsub_file 'Rakefile', /(#{Regexp.escape(old_name.capitalize)})(::Application.load_tasks)/mi do |match|
         "#{new_name_capitalized}::Application.load_tasks"
       end
+
+      # gsub_file 'config/database.yml', /(#{Regexp.escape(old_name)})/mi do |match|
+      #   "#{new_name_capitalized}"
+      # end
     end
   end
 end
